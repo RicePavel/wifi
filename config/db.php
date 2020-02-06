@@ -3,8 +3,8 @@
 return [
     'class' => 'yii\db\Connection',
     'dsn' => 'mysql:host=localhost;dbname=wifi',
-    'username' => 'root',
-    'password' => '',
+    'username' => 'wifi',
+    'password' => 'hhlUI1puzbMAn1wP',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
