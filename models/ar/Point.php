@@ -16,7 +16,7 @@ class Point extends ActiveRecord {
         return [
             [['city_id', 'name', 'language_id'], 'required', 'message' => 'Обязательное поле'],
             [['name'], 'string', 'max' => 250, 'message' => 'Значение должно быть строкой', 'tooLong' => 'не более {max} символов'],
-            [['language_id'], 'safe']
+            [['language_id', 'city_id', 'name'], 'safe']
         ];
     }
     

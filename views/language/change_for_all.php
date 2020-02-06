@@ -19,6 +19,6 @@ $this->title = 'Изменить настройки для всех точек';
 
 <?php $form = ActiveForm::begin() ?>
     <?= $form->field($model, 'language_id')->dropDownList($languages)->label("Язык по умолчанию") ?>
-    <?= Html::submitButton("Изменить настройки для всех") ?>
+    <?= Html::submitButton("Изменить настройки для всех", ['class' => 'btn btn-primary']) ?>
 <?php ActiveForm::end() ?>
 

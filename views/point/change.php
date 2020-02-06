@@ -19,8 +19,8 @@ $form = ActiveForm::begin();
 
 <?php if ($model != null) { ?>
 
-    <?= $form->field($model, 'name')->textInput(['disabled' => true])->label("Название") ?>
-    <?= $form->field($model, 'city_id')->dropDownList($cities, ['disabled' => true])->label("Город") ?>
+    <?= $form->field($model, 'name')->textInput()->label("Название") ?>
+    <?= $form->field($model, 'city_id')->dropDownList($cities)->label("Город") ?>
     <?= $form->field($model, 'language_id')->dropDownList($languages)->label("Язык по умолчанию") ?>
     <?= Html::submitButton('Изменить', ['class' => 'btn btn-primary']) ?>
 

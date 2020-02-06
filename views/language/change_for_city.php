@@ -20,6 +20,6 @@ $this->title = 'Изменить настройки для всех точек �
 <?php $form = ActiveForm::begin() ?>
     <?= $form->field($model, 'city_id')->dropDownList($cities)->label("Город") ?>
     <?= $form->field($model, 'language_id')->dropDownList($languages)->label("Язык по умолчанию") ?>
-    <?= Html::submitButton("Изменить настройки") ?>
+    <?= Html::submitButton("Изменить настройки", ['class' => 'btn btn-primary']) ?>
 <?php ActiveForm::end() ?>
 
